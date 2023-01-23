@@ -5,15 +5,18 @@
 //function  myLogger() {
     //console.log(20)
 //}
+let page = document.getElementById("welcome");
+
 let countEl = document.getElementById("count-el");
-console.log(count);
+//console.log(count);
 let count = 0;
 function increment(){
-    count = count + 1;
-    countEl.innerText = count;
+    count += 1;
+    countEl.textContent = count;
 }
  function save(){
-    console.log(count)
+    let num = count;
+    page.textContent += num;
  }
  //screen concatination
 
@@ -29,9 +32,9 @@ function increment(){
 
  //let myGreeting = greeting + namE; 
  //console.log(myGreeting);
+//let page = document.getElementById("welcome");
+//let welcomeEL = documement.getElementById("welcome");
+ //let namE = "Thaddaeus";
+ //let greeting = "Welcome back ";
 
-let welcomeEL = documement.getElementById("welcome");
- let namE = "Thaddaeus";
- let greeting = "Welcome back ";
-
- welcomeEL.innerText = greeting + namE;
+ //welcomeEL.textContent = greeting + namE;
