@@ -16,7 +16,7 @@ function increment(){
 }
  function save(){
     let num = count;
-    page.textContent += num;
+    page.textContent += " " + num;
  }
  //screen concatination
 
