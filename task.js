@@ -451,3 +451,298 @@ console.log(typeof null)        // object
 let num1 = '10'
 let numInt = parseInt(num1)
 console.log(numInt) // 10
+
+let num3 = '10'
+let numInt3 = Number(num3)
+
+console.log(numInt3) // 10
+
+let num4 = '10'
+let numInt4 = +num4
+
+console.log(numInt4) // 10
+
+//String to Float
+//We can convert string float number to a float number. Any float number inside a quote is a string float number. An example of a string float number: '9.81', '3.14', '1.44', etc. We can convert string float to number using the following methods:
+
+//parseFloat()
+//Number()
+//Plus sign(+)
+
+let num7 = '9.81'
+let numFloat = parseFloat(num7)
+
+console.log(num7Float) // 9.81
+//
+let num44 = '9.81'
+let numFloat44 = Number(num44)
+
+console.log(num44Float) // 9.81
+//
+let num5 = '9.81'
+let numFloat5 = +num
+
+console.log(num5Int) // 9.81
+
+//Float to Int
+//We can convert float numbers to integers. We use the following method to convert float to int:
+//parseInt()
+
+let num78 = 9.81
+let num7Int = parseInt(num78)
+
+console.log(num7Int) // 9
+
+
+// Exercises: Data Types
+// Declare variables and assign string, boolean, undefined and null data types
+// The JavaScript typeof operator uses to check different data types. Check the data type of each variables from question number 1.
+// Exercise: String
+// Declare a variable name company and assign it to an initial value 'Coding Academy'.
+// Print the string on the browser console using console.log()
+// Print the length of the string on the browser console using console.log()
+// Change all the string to capital letters using toUpperCase() method
+// Change all the string to lowercase letters using toLowerCase() method
+// Cut(slice) out the first word of the string using slice, substr() or substring() method
+// Use substr to slice out the phase because because because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+// Check if the string contains a word Academy using includes() method
+// Split the string into array using split() method
+// Split the string Coding Academy at the space using split() method
+// 'Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon' split the string at the comma and change it to an array.
+// Change Coding Academy to Microsoft Academy using replace() method.
+// What is character at index 10 in 'Coding Academy' string use charAt() method.
+// What is the character code of A in 'Coding Academy' string using charCodeAt()
+// Use indexOf to determine the position of the first occurrence of c in Coding Academy
+// Use lastIndexOf to determine the position of the last occurrence of c in Coding Academy.
+// Use indexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+// Use lastIndexOf to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+// Use search to find the position of the first occurrence of the word because in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+// Use trim() to remove if there is trailing whitespace at the beginning and the end of a string.E.g ' Coding Academy '.
+// Use startsWith() method with the string Coding Academy make the result true
+// Use endsWith() method with the string Coding Academy make the result true
+// Use match() method to find all the c’s in Coding Academy
+// Use match() to count the number all because's in the following sentence:'You cannot end a sentence with because because because is a conjunction'
+// Use concat() and merge 'Coding' and 'Academy' to a single string, 'Coding Academy'
+// Use repeat() method to print Coding Academy 5 times
+// Calculate the total annual income of the person by extract the numbers from the following text. 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
+
+
+
+//Booleans
+//Boolean value is either true or false. Any comparisons return a boolean value which is either true or false.
+
+let isLigtOn = true;
+let isRaining = false;
+let hungry = false;
+let isMaried = true;
+
+//
+
+// Exercise: Booleans
+// Boolean value is either true or false.
+
+// Write three JavaScript statement which provide truthy value.
+// Write three JavaScript statement which provide falsy value.
+// Use all the following comparison operators to compare the following values: >, < >=, <=, !=, !==,===. Which are true or which are false ?
+// 4 > 3
+// 4 >= 3
+// 4 < 3
+// 4 <= 3
+// 4 == 4
+// 4 === 4
+// 4 != 4
+// 4 !== 4
+// 4 != '4'
+// 4 == '4'
+// 4 === '4'
+
+
+// Undefined
+
+let firstName23;
+console.log(firstName23); //not defined, because it is not assigned to a value yet
+
+//Null
+let empty = null;
+console.log(empty); // -> null , means no value
+
+//Exercise - 6 : Data types
+// String, number, boolean, null, undefined and symbol(ES6) are JavaScript primitive data types.
+
+// The JavaScript typeof operator uses to check different data types. Check the data type of each variables from question number 1.
+
+// Operators
+// Arithmetic Operators
+// Arithmetic operators are mathematical operators:+, -, _, /, _
+
+let numOne = 4;
+let numTwo = 3;
+let sum = numOne + numTwo;
+let diff = numOne - numTwo;
+let mult = numOne * numTwo;
+let div = numOne / numTwo;
+let remainder = numOne % numTwo;
+
+console.log(sum, diff, mult, div, remainder); // ->7,1,12,1.33,1
+
+let pI = 3.14;
+let radius = 100;          // length in meter
+
+const gravity = 9.81;      // in m/s2
+let mass = 72;             // in Kilogram
+const boilingPoint = 100;  // temperature in oC, boiling point of water
+const bodyTemp = 37;       // body temperature in oC
+
+// Lets calculate area of a circle
+
+const areaOfCircle = PI * radius * radius;
+console.log(areaOfCircle); // -> 314 m
+
+// Lets calculate weight of a substance
+const weight = mass * gravity;
+console.log(weight); // -> 706.32 N(Newton)
+
+// ConcatEnating string with numbers using string interpolation
+/*
+ The boiling point of water is 100 oC.
+ Human body temperature is 37 oC.
+ The gravity of earth is 9.81 m/s2.
+ */
+console.log(
+  `The boiling point of water is ${boilingPoint} oC.\nHuman body temperature is ${body} oC.\nThe gravity of earth is ${gravity} m / s2.`
+);
+
+// Exercises : Arithmetic Operators
+// JavaScript arithmetic operators are addition(+), subtraction(-), multiplication(*), division(/), modulus(%), increment(++) and decrement(--).
+
+let operandOne = 4;
+let operandTwo = 3;
+
+
+// && ampersand example
+
+const check1 = 4 > 3 && 10 > 5; // true and true -> true
+const check2 = 4 > 3 && 10 < 5; // true and false -> false
+const check3 = 4 < 3 && 10 < 5; // false and false -> false
+
+// || pipe or, example
+
+const check4 = 4 > 3 || 10 > 5; // true and true -> true
+const check22 = 4 > 3 || 10 < 5; // true and false -> true
+const check23 = 4 < 3 || 10 < 5; // false and false -> false
+
+// ! Negation examples
+
+let check11 = 4 > 3;           // -> true
+let check33 = !(4 > 3);        // -> false
+let isLightOn = true;        // -> true
+let isLightOff = !isLightOn; // -> false
+let isMarried = !false;      // -> true
+
+// Exercises: Logical Operators
+// Which are true or which are false ?
+
+// 4 > 3 && 10 < 12
+// 4 > 3 && 10 > 12
+// 4 > 3 || 10 < 12
+// 4 > 3 || 10 > 12
+// !(4 > 3)
+// !(4 < 3)
+// !(false)
+// !(4 > 3 && 10 < 12)
+// !(4 > 3 && 10 > 12)
+// !(4 === '4')
+
+// Comparison Operators
+
+// Boolean value is either true or false. Any comparison return a boolean either true or false. Use all the following comparison operators to compare the following values: >, < >=, <=, !=, !==,===. Which are true or which are false ?
+
+// 4 > 3
+// 4 >= 3
+// 4 < 3
+// 4 <= 3
+// 4 == 4
+// 4 === 4
+// 4 != 4
+// 4 !== 4
+// 4 != '4'
+// 4 == '4'
+// 4 === '4'
+// Conditionals
+// if
+// We use if condition to check only on condition.
+
+if (condition) {
+    // code goes here
+  }
+  
+  let isRaing = true;
+  if (isRaing) {
+    console.log('Remember to take your rain coat.');
+  }
+
+  if (condition) {
+    // if the condition meets, this block of code runs
+  } else {
+    // if condition doesn't meet, this block code runs
+  }
+  
+//   if else if else
+// Whenever we have multiple conditions.
+
+  let isRaning = true;
+  if (isRaning) {
+    console.log('You need a rain coat.');
+  } else {
+    console.log('No need for a rain coat.');
+  }
+
+
+  //switch
+// Switch an alternative for if else if else
+
+  var weather = 'cloudy';
+switch (weather) {
+  case 'rainy':
+    console.log('You need a rain coat.');
+    break;
+  case 'cloudy':
+    console.log('It might be cold, you need a jacket.');
+    break;
+  case 'sunny':
+    console.log('Go out freely.');
+    break;
+  default:
+    console.log(' No need for rain coat.');
+    break;
+}
+// Switch More Examples
+var dayUserInput = prompt('What day is it ?');
+var day = dayUserInput.toLowerCase();
+switch (day) {
+  case 'monday':
+    console.log('Today is Monday');
+    break;
+  case 'tuesday':
+    console.log('Today is Tuesday');
+    break;
+  case 'wednesday':
+    console.log('Today is Wednesday');
+    break;
+  case 'thursday':
+    console.log('Today is Thursday');
+    break;
+  case 'friday':
+    console.log('Today is Friday');
+    break;
+  case 'saturday':
+    console.log('Today is Saturday');
+    break;
+  case 'sunday':
+    console.log('Today is Sunday');
+    break;
+
+  default:
+    console.log('It is not a week day.');
+    break;
+}
